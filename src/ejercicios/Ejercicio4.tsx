@@ -1,5 +1,13 @@
+import React from 'react';
+
+interface Alumno {
+  name: string;
+  edad: number;
+  calificacion: number;
+}
+
 export const Ejercicio4 = () => {
-  const alumnos = [
+  const alumnos: Alumno[] = [
     {
       name: 'Viviana',
       edad: 19,
@@ -16,6 +24,7 @@ export const Ejercicio4 = () => {
       calificacion: 9,
     },
   ];
+
   const promedios = () => {
     if (alumnos.length === 0) {
       return 0;
